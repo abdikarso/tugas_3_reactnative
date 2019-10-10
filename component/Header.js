@@ -8,7 +8,7 @@ class Header extends Component {
     }
   render(){
     return(
-        <View style={{flex:1, backgroundColor:"#9dc386", alignItems:"center", justifyContent:"center"}}>
+        <View style={{flex:1, backgroundColor:"#6cff65", alignItems:"center", justifyContent:"center"}}>
           <Text style={{color:"white", fontSize:15}}>Tugas 3 React Native</Text>
           <Text style={{color:"purple", fontSize:25}}>{this.props.data}</Text>
           </View>
