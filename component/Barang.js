@@ -61,5 +61,5 @@ class Barang extends Component {
     )
   }
 }
-
+//Abdi
 export default Barang;
