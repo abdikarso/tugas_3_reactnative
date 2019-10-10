@@ -11,13 +11,13 @@ class Barang extends Component {
 
   handleTambah = () => {
     this.setState({
-      jumlah : this.state.jumlah + 1.23
+      jumlah : this.state.jumlah + 1
     });
   };
   handleKurang = () => {
     if (this.state.jumlah > 0) {
       this.setState({
-        jumlah : this.state.jumlah - 1.23
+        jumlah : this.state.jumlah - 1
       });
     } else {
       Alert.alert("Jumlah tidak boleh Kurang dari 0")
