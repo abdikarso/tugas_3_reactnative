@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
 
 class Barang extends Component {
   constructor(props){
@@ -11,13 +11,17 @@ class Barang extends Component {
 
   handleTambah = () => {
     this.setState({
-      jumlah : this.state.jumlah + 3.14
+      jumlah : this.state.jumlah + 1.23
     });
   };
   handleKurang = () => {
-    this.setState({
-      jumlah : this.state.jumlah - 3.14
-    });
+    if (this.state.jumlah > 0) {
+      this.setState({
+        jumlah : this.state.jumlah - 1.23
+      });
+    } else {
+      Alert.alert("Jumlah tidak boleh Kurang dari 0")
+    }
   };
 
   render(){
